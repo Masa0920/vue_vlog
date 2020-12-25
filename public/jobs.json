@@ -1,17 +1,9 @@
 [
    {
       "title": "絵がきれいすぎるアニメ３選",
-      "cardText": "アニメ",
+      "category": "アニメ",
       "id": "1",
-      "img": "https://picsum.photos/600/300/?image=25",
-      "link": "/jobs/1",
-      "footer": "2020/12/15"
-   },
-   {
-      "title": "",
-      "id": "",
-      "cardText": "",
-      "img": "",
-      "link": ""
+      "date": "2020/12/15",
+      "link": "/jobs/1"
    }
 ]

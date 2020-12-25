@@ -3,27 +3,26 @@
     <h3>大学の勉強のこと、プログラミングのことなどについて学んだことを記録していく</h3>
     <div class="blank"></div>
     <b-row align-v="center">
-        <job-card
+        <article-card
           v-for="job in jobs"
           :key="job.id"
           :title="job.title"
-          :img="job.img"
-          :cardText="job.cardText"
+          :category="job.category"
+          :date="job.date"
           :link="job.link"
-          :footer="job.footer"
-        ></job-card>
+        ></article-card>
       </b-row>
   </b-container>
 </template>
 
 <script>
 // @ is an alias to /src
-import JobCard from "@/components/JobCard.vue";
+import ArticleCard from "@/components/ArticleCard.vue";
 
 export default {
   name: 'home',
   components: { 
-    "job-card": JobCard 
+    "article-card": ArticleCard
   },
   mounted() {
     this.fetchData();  
